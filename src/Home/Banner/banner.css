@@ -1,0 +1,28 @@
+@keyframes floating {
+    0%   { transform: translate(0px, 0px); }
+    50%   { transform: translate(-6px, -30px); }
+    100%   { transform: translate(0px, 0px); }
+}
+.an{
+    animation:floating 4s ease-in-out 0s infinite;
+   
+}
+.bg-1{
+    background-color: #000000;
+   background-image: linear-gradient(147deg, #000000ac 0%, #35485eea 74%);
+              /* backgroundColor: 'fc9842',
+            backgroundImage: 'linear-gradient(315deg, #fc9842 0%, #fe5f75 74%)', */
+}
+.bg-2{
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #1f2c48 0%, #e8e6e6 80%);
+    
+}
+.bg-3{
+    background-color: #f9fcff;
+background-image: linear-gradient(147deg, #f0f4f7 0%, #b6bdc4 74%);
+}
+.bg-4{
+    background-color: #000000;
+background-image: linear-gradient(315deg, #000000 0%, #474545 74%);
+}
