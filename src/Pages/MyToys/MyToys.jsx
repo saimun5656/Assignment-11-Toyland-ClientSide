@@ -4,13 +4,25 @@ import MyToyRow from "./MyToyRow";
 
 const MyToys = () => {
     const [toys,setToys]=useState([]);
-    const{user}=useContext(AuthContext)
+    const{user}=useContext(AuthContext);
+    const [updated,setUpdate]=useState(false);
     useEffect(()=>{
-        fetch(`http://localhost:5100/toy/user?email=${user?.email}`)
+        fetch(`http://localhost:5100/toys/user?email=${user.email}`)
+        .then(res => res.json())
+        .then(data => setToys(data));
+    }, [user.email,updated])
+    const handleUpdateToy=(update,id)=>{
+        fetch(`http://localhost:5100/toys/${id}`,{
+            method:"PATCH",
+            headers:{'content-type':'application/json'},
+            body:JSON.stringify(update)
+        })
         .then(res=>res.json())
-        .then(data=>setToys(data))
-    })
-
+        .then(data=>{
+            console.log(data);
+            setUpdate(!updated)
+        })
+   }
     return (
         <div className="overflow-x-auto min-h-screen">
         <table className="table mx-auto">
@@ -29,7 +41,7 @@ const MyToys = () => {
           <tbody>
             {/* row  */}
             {
-              toys.map((toy, idx) => <MyToyRow key={toy._id} idx={idx} toy={toy}></MyToyRow>)
+              toys.map((toy, idx) => <MyToyRow key={toy._id} idx={idx} toy={toy} handleUpdateToy={handleUpdateToy}></MyToyRow>)
             }
 
           </tbody>
