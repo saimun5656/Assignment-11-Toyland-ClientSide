@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
 const Header = () => {
-    const navItems= <>
+    const navItems= 
+    <>
     <li><Link to='/'>Home</Link></li>
     <li><Link to='/addtoy'>Add A Toy</Link></li>
-    <li><Link></Link></li>
-       
+    <li><Link to='/alltoys'>All Toys</Link></li>
+    <li><Link to='/mytoys'>My Toys</Link></li>  
     </>
     return (
         <div className="navbar bg-base-100 max-w-7xl mx-auto">

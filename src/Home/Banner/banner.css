@@ -26,3 +26,8 @@ background-image: linear-gradient(147deg, #f0f4f7 0%, #b6bdc4 74%);
     background-color: #000000;
 background-image: linear-gradient(315deg, #000000 0%, #474545 74%);
 }
+.hoverbg-4:hover{
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #474545 74%);
+    color: #e8e6e6;
+}
