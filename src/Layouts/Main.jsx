@@ -5,7 +5,7 @@ import Header from "../Shared/Header/Header";
 const Main = () => {
     //bg-[#2d4052]
     return (
-        <div className="">
+        <div>
             <div className="w-11/12 mx-auto">
             <Header></Header>
             <Outlet></Outlet>

@@ -21,8 +21,8 @@ useEffect(()=>{
 const googleSignIn=()=>{
    return signInWithPopup(auth,googleProvider)
 }
-const createUser = ()=>{
-     return createUserWithEmailAndPassword()
+const createUser = (email,password)=>{
+    return createUserWithEmailAndPassword(auth,email,password)
 }
 const login = (email,password)=>{
    return signInWithEmailAndPassword(auth,email,password);

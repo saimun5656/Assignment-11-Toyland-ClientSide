@@ -1,15 +1,23 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Header = () => {
+  const {user,logOut} = useContext(AuthContext) 
+  
     const navItems= 
     <>
     <li><Link to='/'>Home</Link></li>
-    <li><Link to='/addtoy'>Add A Toy</Link></li>
     <li><Link to='/alltoys'>All Toys</Link></li>
-    <li><Link to='/mytoys'>My Toys</Link></li>  
+    {
+      user?<>
+      <li><Link to='/mytoys'>My Toys</Link></li> 
+      </>:''
+    }
+    <li><Link to='/addtoy'>Add A Toy</Link></li>
     </>
     return (
-        <div className="navbar bg-base-100 max-w-7xl mx-auto">
+        <div className="navbar bg-base-100 max-w-7xl mx-auto ">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -27,7 +35,12 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Get started</a>
+   {user?<>
+    <img className="w-8 rounded-full me-5" src={user.photoURL} alt="" />
+   <button onClick={logOut}>Logout</button>
+   
+   </>:
+   <Link to='/login'>Login</Link>}
   </div>
 </div>
     );

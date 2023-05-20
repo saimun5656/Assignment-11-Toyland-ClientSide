@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { AuthContext } from "../../Shared/AuthProvider/AuthProvider";
+
 const AddToy = () => {
+    const {user} = useContext(AuthContext)
     const handleSubmit=(event)=>{
        event.preventDefault();
        const form = event.target;
@@ -7,6 +11,7 @@ const AddToy = () => {
        const email = form.email.value;
        const subCategory= form.subCategory.value;
        const rating = form.rating.value;
+       const price = form.price.value;
        const quantity= form.quantity.value;
        const photo = form.photo.value;
        const description= form.description.value;
@@ -15,6 +20,7 @@ const AddToy = () => {
                    email,
                    subCategory,
                    rating,
+                   price,
                    quantity,
                    photo,
                    description,
@@ -51,13 +57,13 @@ const AddToy = () => {
                     <label className="label">
                         <span className="label-text">Your Name</span>
                     </label>
-                    <input name="userName" type="text" placeholder="your name" className="input rounded-md bg-white border-0" />
+                    <input name="userName" type="text" placeholder="your name" className="input rounded-md bg-white border-0" defaultValue={user.displayName}/>
                 </div>
                 <div className="form-control">
                     <label className="label">
-                        <span className="label-text">Email</span>
+                        <span className="label-text">Price</span>
                     </label>
-                    <input name="email" type="email" placeholder="email" className="input rounded-md bg-white border-0" />
+                    <input name="price" type="number" placeholder="price" className="input rounded-md bg-white border-0" defaultValue={user.email}/>
                 </div>
                 <div className="form-control">
                     <label className="label">
@@ -79,6 +85,12 @@ const AddToy = () => {
 " className="input rounded-md bg-white border-0" />
                 </div>
                 
+                </div>
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text">Email</span>
+                    </label>
+                    <input name="email" type="email" placeholder="email" className="input rounded-md bg-white border-0" defaultValue={user.email}/>
                 </div>
                 <div className="form-control">
                     <label className="label">

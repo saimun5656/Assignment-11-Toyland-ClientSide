@@ -4,7 +4,7 @@ import ToyRow from "./ToyRow";
 const AllToys = () => {
     const [toys,setToys]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5100/toys')
+        fetch('https://assignment-11-toyland-server-side.vercel.app/toys')
         .then(res=>res.json())
         .then(data=>setToys(data))
     },[])

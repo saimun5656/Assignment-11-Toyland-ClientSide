@@ -2,7 +2,7 @@
 
 const Footer = () => {
     return (
-        <footer className="footer w-11/12 mx-auto text-base-content ">
+        <footer className="footer w-11/12 mx-auto text-base-content mt-10 ps-2">
   <div>
   <div className="flex gap-5 items-center">
   <img className="w-16 rotate-45 me-4" src="./jigsaw.png" alt="" />
