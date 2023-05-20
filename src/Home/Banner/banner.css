@@ -31,3 +31,9 @@ background-image: linear-gradient(315deg, #000000 0%, #474545 74%);
     background-image: linear-gradient(315deg, #000000 0%, #474545 74%);
     color: #e8e6e6;
 }
+.glassbg{
+    background: rgba( 255, 251, 251, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+}
