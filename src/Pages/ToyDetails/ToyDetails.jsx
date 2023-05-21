@@ -1,4 +1,4 @@
-import { useLoaderData, useLocation } from "react-router-dom";
+import { useLoaderData,} from "react-router-dom";
 
 const ToyDetails = () => {
     const {photo,toyName,name,rating,price,quantity,description} = useLoaderData()

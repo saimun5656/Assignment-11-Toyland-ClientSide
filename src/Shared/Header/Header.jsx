@@ -15,6 +15,7 @@ const Header = () => {
       </>:''
     }
     <li><Link to='/addtoy'>Add A Toy</Link></li>
+    <li><Link to='/blog'>Blog</Link></li>
     </>
     return (
         <div className="navbar bg-base-100 max-w-7xl mx-auto text-white">
