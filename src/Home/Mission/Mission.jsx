@@ -6,7 +6,7 @@ const Mission = () => {
     return (
         <div className='text-white relative'>
             {/* mission-1-------*/}
-            <div onWheel={() => setScroll(1)} className='flex gap-y-5 flex-col md:flex-row justify-between gap-x-5 pb-16 pt-20'>
+            <div onTouchStart={() => setScroll(1)} onWheel={() => setScroll(1)} className='flex gap-y-5 flex-col md:flex-row justify-between gap-x-5 pb-16 pt-20'>
                 <div className={`w-full border border-emerald-400  rounded p-5 glassbg ${scroll === 1 ? 'bg-scroll' : ''}`}>
                     <button>mission 1</button>
                     <h1 className='text-xl my-5'>Inspire Creativity and Imagination</h1>
@@ -17,17 +17,17 @@ const Mission = () => {
                     </ul>
                 </div>
                 <div className={`w-full`}>
-                    <div className={`md:border-l-4 ps-6 py-10 ${scroll === 1 ? 'block' : 'hidden'}`}>
+                    <div className={`md:border-l-4 ps-6 py-10 translate-x-[-620px] md:translate-x-[0px]  ${scroll === 1 ? 'block duration-1000 translate-x-[0px]' : 'md:hidden'}`}>
                         <h1 className='font-semibold mb-4'>Mission 1: Inspiring Creativity and Imagination</h1>
                         Our toy selling marketplace aims to ignite creativity and imagination in children. Through a curated collection of art supplies, building blocks, and open-ended toys, we provide endless possibilities for exploration and self-expression. We believe in the power of imagination to shape young minds and are committed to fostering creativity and problem-solving skills.
                     </div>
                 </div>
             </div>
             {/* mission-2------- */}
-            <div onWheel={() => setScroll(2)} className='flex flex-col-reverse md:flex-row justify-between gap-x-5 py-16'>
+            <div onTouchStart={() => setScroll(2)} onWheel={() => setScroll(2)} className='flex flex-col-reverse md:flex-row justify-between gap-x-5 py-16'>
 
                 <div className='w-full'>
-                    <div className={`md:border-r-4 translate-x-[-620px]  pr-6 py-10 ${scroll === 2 ? ' translate-x-[0px] duration-500' : 'hidden'}`}>
+                    <div className={`md:border-r-4  translate-x-[-620px] md:translate-x-[0px]  pr-6 py-10 ${scroll === 2 ? 'translate-x-[0px] duration-1000' : 'md:hidden'}`}>
                         <h1 className='font-semibold mb-4'>Mission 2: Inspiring Creativity and Imagination</h1>
                         Our toy selling marketplace aims to ignite creativity and imagination in children. Through a curated collection of art supplies, building blocks, and open-ended toys, we provide endless possibilities for exploration and self-expression. We believe in the power of imagination to shape young minds and are committed to fostering creativity and problem-solving skills.
                     </div>
@@ -44,8 +44,8 @@ const Mission = () => {
 
             </div>
             {/* mission-3------- */}
-            <div onWheel={() => setScroll(3)} className='flex flex-col md:flex-row justify-between gap-x-5 py-16'>
-                <div className={`w-full border border-emerald-400 rounded p-5 glassbg ${scroll === 3 ? 'bg-scroll' : ''}`}>
+            <div onTouchStart={() => setScroll(3)} onWheel={() => setScroll(3)} className='flex flex-col md:flex-row justify-between gap-x-5 py-16'>
+                <div className={`w-full border border-emerald-400 rounded p-5 glassbg  ${scroll === 3 ? 'bg-scroll' : ''}`}>
                     <button>mission 3</button>
                     <h1 className='text-xl my-5'>Promote Safe and Ethical Toy Choices</h1>
                     <ul className='list-disc space-y-5 ps-4'>
@@ -55,22 +55,22 @@ const Mission = () => {
                     </ul>
                 </div>
                 <div className='w-full'>
-                    <div className={` md:border-l-4  ps-6 py-10 ${scroll === 3 ? 'block' : 'hidden'}`}>
+                    <div className={` md:border-l-4   ps-6 py-10  translate-x-[-620px] md:translate-x-[0px] ${scroll === 3 ? 'block translate-x-[0px] duration-1000' : 'md:hidden'}`}>
                         <h1 className='font-semibold mb-4'>Mission 3: Inspiring Creativity and Imagination</h1>
                         Our toy selling marketplace aims to ignite creativity and imagination in children. Through a curated collection of art supplies, building blocks, and open-ended toys, we provide endless possibilities for exploration and self-expression. We believe in the power of imagination to shape young minds and are committed to fostering creativity and problem-solving skills.
                     </div>
                 </div>
             </div>
             {/* mission-4------- */}
-            <div onWheel={() => setScroll(4)} className='flex flex-col-reverse md:flex-row pt-10 pb-28 justify-between gap-x-5'>
+            <div onTouchStart={() => setScroll(4)} onWheel={() => setScroll(4)} className='flex flex-col-reverse md:flex-row pt-10 pb-28 justify-between gap-x-5'>
 
                 <div className='w-full'>
-                    <div className={`md:border-r-4 translate-x-[-620px]  pr-6 py-10 ${scroll === 4 ? ' translate-x-[0px] duration-500' : 'hidden'}`}>
+                    <div className={`md:border-r-4  translate-x-[-620px] md:translate-x-[0px]  pr-6 py-10 ${scroll === 4 ? ' translate-x-[0px] duration-1000' : 'md:hidden'}`}>
                         <h1 className='font-semibold mb-4'>Mission 4: Inspiring Creativity and Imagination</h1>
                         Our toy selling marketplace aims to ignite creativity and imagination in children. Through a curated collection of art supplies, building blocks, and open-ended toys, we provide endless possibilities for exploration and self-expression. We believe in the power of imagination to shape young minds and are committed to fostering creativity and problem-solving skills.
                     </div>
                 </div>
-                <div className={`w-full border border-emerald-400 rounded p-5 glassbg ${scroll === 4 ? 'bg-scroll' : ''}`}>
+                <div className={`w-full border border-emerald-400 rounded p-5 glassbg  ${scroll === 4 ? 'bg-scroll' : ''}`}>
                     <button>mission 4</button>
                     <h1 className='text-xl my-5'>Celebrate Diversity and Inclusivity</h1>
                     <ul className='list-disc space-y-5 ps-4'>

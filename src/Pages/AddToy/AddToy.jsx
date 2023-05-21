@@ -26,7 +26,7 @@ const AddToy = () => {
                    photo,
                    description,
             }
-            fetch('http://localhost:5100/toy',{
+            fetch('https://assignment-11-toyland-server-side.vercel.app/toy',{
                 method:'POST',
                 headers:{'content-type':'application/json'},
                 body:JSON.stringify(toy)

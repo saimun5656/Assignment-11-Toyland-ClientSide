@@ -8,6 +8,7 @@ import Login from "../Pages/Authentication/Login/Login";
 import Register from "../Pages/Authentication/Register/register";
 import PrivateRoute from "./PrivateRoute";
 import Authenticate from "../Layouts/Authenticate";
+import ToyDetails from "../Pages/ToyDetails/ToyDetails";
 
 
 const router = createBrowserRouter([
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
             {
                 path:'signup',
                 element:<Register></Register>
+            },
+            {
+                path:'toys/:id',
+                element:<ToyDetails></ToyDetails>,
+                loader:({params})=>fetch(`https://assignment-11-toyland-server-side.vercel.app/toys/${params.id}`)
             }
         ]
     },
