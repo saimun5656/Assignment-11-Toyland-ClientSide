@@ -8,7 +8,7 @@ const MyToys = () => {
     const{user}=useContext(AuthContext);
     const [updated,setUpdate]=useState(false);
     useEffect(()=>{
-        fetch(`https://assignment-11-toyland-server-side.vercel.app/toys/user?email=${user.email}`)
+        fetch(`https://assignment-11-toyland-server-side.vercel.app/user?email=${user.email}`)
         .then(res => res.json())
         .then(data => setToys(data));
     }, [user.email,updated])
