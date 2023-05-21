@@ -11,7 +11,7 @@ const Category = () => {
     }
     console.log(category);
     useEffect(()=>{
-        fetch(`http://localhost:5100/toys/?subCategory=${category}`)
+        fetch(`https://assignment-11-toyland-server-side.vercel.app/?subCategory=${category}`)
         .then(res=>res.json())
         .then(data=>{
             console.log(data);
@@ -22,7 +22,7 @@ const Category = () => {
     return (
         
         <div className="my-10 ">
-            <h1 className="text-4xl text-white font-semibold text-center mb-5">Shop By category</h1>
+            <h1 className="text-4xl text-white font-semibold md:text-center  mb-10">Shop By category</h1>
             <div>
                 <button onClick={filter} value='off-road' className='bg-4 border-l-2 px-4 py-1 text-xl font-semibold text-white'>Off Road</button>
                 <button onClick={filter} value='sports-car' className='bg-4 border-l-2 px-4 py-1 text-xl font-semibold text-white'> Sports Car</button>

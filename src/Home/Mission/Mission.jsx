@@ -9,14 +9,11 @@ const Mission = () => {
             <div onWheel={() => setScroll(1)} className='flex gap-y-5 flex-col md:flex-row justify-between gap-x-5 pb-16 pt-20'>
                 <div className={`w-full border border-emerald-400  rounded p-5 glassbg ${scroll === 1 ? 'bg-scroll' : ''}`}>
                     <button>mission 1</button>
-                    <h1>Inspire Creativity and Imagination</h1>
-                    <ul>
-                        <li>Provide a diverse range of toys that stimulate creativity and encourage imaginative play.
-                        </li>
-                        <li>
-                            Foster a sense of wonder and curiosity in children by offering unique and innovative toys.
-                        </li>
-                        <li>Support the development of problem-solving skills through interactive and educational toys.</li>
+                    <h1 className='text-xl my-5'>Inspire Creativity and Imagination</h1>
+                    <ul className='list-disc space-y-5 ps-4'>
+                        <li>Offer a wide variety of art supplies, building blocks, and open-ended toys that allow children to explore their creativity and imagination.</li>
+                        <li>Collaborate with local artists and designers to create exclusive toy lines that inspire artistic expression.</li>
+                        <li>Provide resources and tutorials on creative projects that can be done with the toys, fostering a sense of inspiration and innovation.</li>
                     </ul>
                 </div>
                 <div className={`w-full`}>
@@ -37,14 +34,11 @@ const Mission = () => {
                 </div>
                 <div className={`w-full border border-emerald-400 rounded p-5 glassbg ${scroll === 2 ? 'bg-scroll' : ''}`}>
                     <button>mission 2</button>
-                    <h1>Inspire Creativity and Imagination</h1>
-                    <ul>
-                        <li>Provide a diverse range of toys that stimulate creativity and encourage imaginative play.
-                        </li>
-                        <li>
-                            Foster a sense of wonder and curiosity in children by offering unique and innovative toys.
-                        </li>
-                        <li>Support the development of problem-solving skills through interactive and educational toys.</li>
+                    <h1 className='text-xl my-5'>Foster Learning and Development</h1>
+                    <ul className='list-disc space-y-5 ps-4'>
+                        <li>Provide a selection of STEM toys that promote critical thinking, problem-solving, and logical reasoning skills.</li>
+                        <li>Partner with educators and child development experts to curate educational toys that align with different age groups and learning objectives.</li>
+                        <li>Create a blog or resource section on the website with articles and tips for parents on how to maximize the educational value of toys.</li>
                     </ul>
                 </div>
 
@@ -53,7 +47,7 @@ const Mission = () => {
             <div onWheel={() => setScroll(3)} className='flex flex-col md:flex-row justify-between gap-x-5 py-16'>
                 <div className={`w-full border border-emerald-400 rounded p-5 glassbg ${scroll === 3 ? 'bg-scroll' : ''}`}>
                     <button>mission 3</button>
-                    <h1 className='text-xl my-5'>Inspire Creativity and Imagination</h1>
+                    <h1 className='text-xl my-5'>Promote Safe and Ethical Toy Choices</h1>
                     <ul className='list-disc space-y-5 ps-4'>
                         <li>Provide a diverse range of toys that stimulate creativity.</li>
                         <li>Foster a sense of wonder and curiosity in children.</li>
@@ -78,14 +72,11 @@ const Mission = () => {
                 </div>
                 <div className={`w-full border border-emerald-400 rounded p-5 glassbg ${scroll === 4 ? 'bg-scroll' : ''}`}>
                     <button>mission 4</button>
-                    <h1>Inspire Creativity and Imagination</h1>
-                    <ul>
-                        <li>Provide a diverse range of toys that stimulate creativity and encourage imaginative play.
-                        </li>
-                        <li>
-                            Foster a sense of wonder and curiosity in children by offering unique and innovative toys.
-                        </li>
-                        <li>Support the development of problem-solving skills through interactive and educational toys.</li>
+                    <h1 className='text-xl my-5'>Celebrate Diversity and Inclusivity</h1>
+                    <ul className='list-disc space-y-5 ps-4'>
+                        <li>Curate a diverse range of figures, and toys representing different races, ethnicities, and abilities to promote inclusivity.</li>
+                        <li>Feature books and toys that highlight stories and characters from various cultural backgrounds.</li>
+                        <li>Offer sensory toys  children with special needs, ensuring they have access to inclusive play experiences.</li>
                     </ul>
                 </div>
 

@@ -8,12 +8,12 @@ const MyToys = () => {
     const{user}=useContext(AuthContext);
     const [updated,setUpdate]=useState(false);
     useEffect(()=>{
-        fetch(`http://localhost:5100/toys/user?email=${user.email}`)
+        fetch(`https://assignment-11-toyland-server-side.vercel.app/toys/user?email=${user.email}`)
         .then(res => res.json())
         .then(data => setToys(data));
     }, [user.email,updated])
     const handleUpdateToy=(update,id)=>{
-        fetch(`http://localhost:5100/toys/${id}`,{
+        fetch(`https://assignment-11-toyland-server-side.vercel.app/toys/${id}`,{
             method:"PATCH",
             headers:{'content-type':'application/json'},
             body:JSON.stringify(update)
@@ -32,7 +32,7 @@ const MyToys = () => {
         })
    }
     return (
-        <div className="overflow-x-auto min-h-screen">
+        <div className="overflow-x-auto min-h-screen text-white mt-16">
         <table className="table mx-auto">
           {/* head */}
           <thead>

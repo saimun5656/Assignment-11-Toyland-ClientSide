@@ -47,7 +47,7 @@ const AddToy = () => {
     }
     return (
 
-        <div className=" flex md:flex-row flex-col card-side  shadow-xl mt-10">
+        <div className=" flex md:flex-row flex-col card-side  shadow-xl my-10">
             <div className="bg-1 md:rounded-l-md rounded-t-md flex items-center justify-center">
             <div className='an'>
                     <img  className="w-96 " src="/public/pngwing.com.png" alt="" />
