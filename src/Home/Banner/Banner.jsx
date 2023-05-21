@@ -23,8 +23,8 @@ const Banner = () => {
                    
                     </div>
                     <div className='bg-3  p-5 rounded-md text-center h-full space-y-3'>
-                    <h1 className=" text-3xl">Up to 50% off</h1>
-                    <p>on selected items</p>
+                    <h1 className=" text-3xl">Shop By Category</h1>
+                    <p>selecte category now!</p>
                     <button className='bg-4 px-4 py-1 rounded-md text-xl font-semibold text-white shadow-lg'>Shop now</button>
                     </div>
                 </div>

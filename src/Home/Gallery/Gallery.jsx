@@ -1,8 +1,8 @@
 const Gallery = () => {
     return (
         <div className="mt-10">
-            <h1 className="text-5xl text-center mb-5 font-mono font-semibol">Recent photoShoots</h1>
-<div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+            <h1 className="text-4xl md:text-5xl text-center mb-5 font-mono font-semibol">Recent photoShoots</h1>
+<div className="grid grid-cols-2 md:grid-cols-4 gap-5  items-center">
             <div className="h-[220px] lg:h-[300px] bg-[#d9dee4] rounded-lg">
             <img className="h-full" src="https://i.ibb.co/n8Knrg2/removal-ai-a5de36ec-a01c-4a3e-9791-4eb101d26c79.png" alt="" />
             </div>

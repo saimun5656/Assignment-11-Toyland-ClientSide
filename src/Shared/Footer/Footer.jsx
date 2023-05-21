@@ -2,7 +2,8 @@
 
 const Footer = () => {
     return (
-        <footer className="footer w-11/12 mx-auto text-base-content mt-10 ps-2 mb-10">
+ <div className="bg-1 text-white py-10">
+   <footer className="footer max-w-7xl w-11/12 mx-auto text-base-content mt-10 ps-2 mb-0">
   <div>
   <div className="flex gap-5 items-center">
   <img className="w-16 rotate-45 me-4" src="./jigsaw.png" alt="" />
@@ -31,6 +32,7 @@ const Footer = () => {
     <a className="link link-hover">Cookie policy</a>
   </div>
 </footer>
+ </div>
     );
 };
 

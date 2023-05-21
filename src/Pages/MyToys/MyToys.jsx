@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Shared/AuthProvider/AuthProvider";
 import MyToyRow from "./MyToyRow";
+import Swal from "sweetalert2";
 
 const MyToys = () => {
     const [toys,setToys]=useState([]);
@@ -21,6 +22,13 @@ const MyToys = () => {
         .then(data=>{
             console.log(data);
             setUpdate(!updated)
+            data.modifiedCount>0?
+            Swal.fire({
+              title: 'updated!',
+              text: 'Toy details has been updated',
+              icon: 'success',
+              confirmButtonText: 'ok'
+            }):''
         })
    }
     return (
