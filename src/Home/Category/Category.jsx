@@ -11,7 +11,7 @@ const Category = () => {
     }
     console.log(category);
     useEffect(()=>{
-        fetch(`https://assignment-11-toyland-server-side.vercel.app/?subCategory=${category}`)
+        fetch(`https://assignment-11-toyland-server-side.vercel.app/toys/?subCategory=${category}`)
         .then(res=>res.json())
         .then(data=>{
             console.log(data);

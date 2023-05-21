@@ -92,7 +92,7 @@ const Register = () => {
               </div>
               <h1 className='mt-5 text-red-500 text-xl font-mono'>{error}</h1>
               <h1 className='mt-5 text-green-500 text-xl font-mono'>{success}</h1>
-              <h1 className='mt-5  text-xl'>Already have an Account? <span className='hover:text-blue-500'><Link to='/login'>login</Link></span></h1>
+              <h1 className='mt-5  text-xl'>Already have an Account? <span className='hover:text-blue-500'><Link to='/auth/login'>login</Link></span></h1>
               <div className=" mt-6">
                 
                 <button type='submit' className="btn text-sm text-white btn-primary rounded-[5px] bg-4 shadow-sm border-0">Create  Account</button>

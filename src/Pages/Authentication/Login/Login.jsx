@@ -89,7 +89,7 @@ const Login = () => {
         <h1 className='mt-5 text-green-500 text-xl font-mono'>{success}</h1>
         <div className=" mt-6">
           <button type='submit' className="btn text btn-primary rounded-[5px] me-10 bg-4 shadow-lg text-white">Login now</button>
-          <Link to='/signup'><button className="btn text-sm btn-primary rounded-[5px] bg-gray-100 shadow-sm border-0">Create A Account</button></Link> 
+          <Link to='/auth/signup'><button className="btn text-sm btn-primary rounded-[5px] bg-gray-100 shadow-sm border-0">Create A Account</button></Link> 
         </div>
       </form>
 

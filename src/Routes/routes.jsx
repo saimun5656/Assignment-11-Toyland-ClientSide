@@ -7,6 +7,7 @@ import MyToys from "../Pages/MyToys/MyToys";
 import Login from "../Pages/Authentication/Login/Login";
 import Register from "../Pages/Authentication/Register/register";
 import PrivateRoute from "./PrivateRoute";
+import Authenticate from "../Layouts/Authenticate";
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,20 @@ const router = createBrowserRouter([
             },
             {
                 path:'signup',
+                element:<Register></Register>
+            }
+        ]
+    },
+    {
+        path:'/auth',
+        element:<Authenticate></Authenticate>,
+        children:[
+            {
+                path:'/auth/login',
+                element:<Login></Login>
+            },
+            {
+                path:'/auth/signup',
                 element:<Register></Register>
             }
         ]

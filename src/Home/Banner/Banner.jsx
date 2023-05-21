@@ -10,7 +10,7 @@ const Banner = () => {
                     <button className='bg-4 px-4 py-1 rounded-md text-xl font-semibold text-white '>Shop now</button>
                     </div>
                     <div className='an'>
-                    <img  className="w-96 " src="/public/pngwing.com.png" alt="" />
+                    <img  className="w-96 " src="https://i.ibb.co/XpqP3wK/pngwing-com.png" alt="" />
                     </div> 
                 </div>
                 <div className='flex flex-col gap-y-5 h-full '>
