@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ToyCard from "./ToyCard";
 
 const Category = () => {
-    const [category,setCategory]=useState('off-road');
+    const [category,setCategory]=useState('classical-cars');
     const [toys,setToys]=useState([]);
     const filter=(event)=>{
             const subCategory=event.target.value
@@ -22,7 +22,7 @@ const Category = () => {
     return (
         
         <div className="my-10 ">
-            <h1 className="text-4xl font-semibold text-center mb-5">Shop By category</h1>
+            <h1 className="text-4xl text-white font-semibold text-center mb-5">Shop By category</h1>
             <div>
                 <button onClick={filter} value='off-road' className='bg-4 border-l-2 px-4 py-1 text-xl font-semibold text-white'>Off Road</button>
                 <button onClick={filter} value='sports-car' className='bg-4 border-l-2 px-4 py-1 text-xl font-semibold text-white'> Sports Car</button>

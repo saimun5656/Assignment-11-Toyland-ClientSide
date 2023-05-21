@@ -3,9 +3,9 @@ import Footer from "../Shared/Footer/Footer";
 import Header from "../Shared/Header/Header";
 
 const Main = () => {
-    //bg-[#121c24]
+    //bg-[#2d4052]
     return (
-        <div className="">
+        <div className="bg-[#121c24]">
             <div className="w-11/12 max-w-7xl mx-auto">
             <Header></Header>
             <Outlet></Outlet>

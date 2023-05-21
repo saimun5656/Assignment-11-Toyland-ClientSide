@@ -32,8 +32,16 @@ background-image: linear-gradient(315deg, #000000 0%, #474545 74%);
     color: #e8e6e6;
 }
 .glassbg{
-    background: rgba( 255, 251, 251, 0.25 );
+    background: rgba(26, 41, 38, 0.205);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 1.5px );
-    -webkit-backdrop-filter: blur( 1.5px );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+.bg-gr{
+    background-color: #fffdfd;
+    background-image: linear-gradient(315deg, #1f2c48 22%, #e8e6e6 80%);
+    opacity: 5%
+}
+.bg-scroll{
+    background: rgba(37, 84, 68, 0.411);
 }
